@@ -1,0 +1,34 @@
+# See https://owncast.online/docs/configuration/ for more details
+
+instanceDetails:
+  name: Owncast
+  title: Owncast
+  summary: "Owncast instance"
+
+  logo: /img/logo.svg
+
+  tags:
+    - streaming
+
+  nsfw: false
+
+videoSettings:
+  # Change this value and keep it secure.  Treat it like a password to your live stream.
+  streamingKey: abc123
+
+  streamQualities:
+    - low:
+      videoBitrate: 800
+      scaledWidth: 640
+      encoderPreset: veryfast
+
+    - medium:
+      videoBitrate: 1200
+      encoderPreset: veryfast
+
+    - high:
+      videoBitrate: 1600
+      encoderPreset: veryfast
+
+# Set to true if you don't want the service checking for future releases.
+disableUpgradeChecks: false
